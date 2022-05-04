@@ -1,0 +1,356 @@
+html{
+    font-size: 4px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+@supports(backdrop-filter:blur(8px)){
+    #primotesto{
+        background-color: #ffffff;
+    }   
+}
+
+/*********HEADER**********/
+
+header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.bn {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #000000;
+    width: 100%;
+    height: 32px;
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: 700;
+    vertical-align: center;
+}
+.main_banner{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    font-size: 4rem;
+    background-color: #ffffff;
+}
+.main_banner .icon{
+    visibility: hidden;
+}
+nav{
+   display: flex;
+   align-items: center;
+   padding-right: 2%;
+}
+nav p:hover {
+    color: #df136f49;
+    border-radius: 15%;
+    font-weight: 900;
+    font-size: larger;
+}
+#logo {
+    padding: 32px;
+    font-size: 19px;
+    border-style: dotted;
+}
+
+/**************MAIN***************/
+
+/***********PRIMA SEZIONE********/
+
+#prima_sezione{
+    background-image: url("../RES/fragoline.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+    padding-top: 7%;
+}
+.item{
+    width:50%;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.testi {
+    font-weight: 700;
+    margin-top: 7%;
+    margin-left: 9%;
+}
+#tag{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+h2{
+    font-size: 8rem;
+    margin-top: 2%;
+}
+p {
+    font-size: 4rem;
+    font-weight: 400;
+}
+#button1 {
+    display: flex;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 4rem;
+    font-weight: 700;
+    width:49%;
+    margin-top: 7%;
+    margin-left: -2%;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/***********SECONDA SEZIONE********/
+
+
+.rev{
+    flex-direction: row-reverse;
+}
+
+.flex-container {
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img {
+    background-image: url("../RES/fragole_bianco.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content-fluid>h2 {
+    font-size: 8rem;
+}
+.content-fluid p{
+    margin-top: 4%;
+}
+.button2{
+    display: flex;
+    margin-top: 5%;
+    width: 21.15%;
+    height: 48px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    text-decoration: none;
+}
+
+
+/*************FOOTER************/
+
+/************PRIMA SEZIONE*********/
+
+#foot1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    padding: 3%;
+    background-color: #F5F5F5;
+    ;
+}
+footer .ic {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*********SECONDA SEZIONE**********/
+
+.search {
+    border-bottom: solid 2 #000000;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin-top: 6%;
+    padding-bottom: 1.5%;
+    margin-bottom: 6%;
+    margin-right: 1.5%;
+    width: 317px;
+    color: #9D9D9D;
+    font-size: 4rem;
+}
+h3 {
+    font-size: 6rem;
+}
+#story {
+    font-size: 10px;
+    color: #9D9D9D;
+}
+.cont button {
+    background-color: #9D9D9D;
+    height: 10.48;
+    color: #ffffff;
+    font-size: 14px;
+    border-color: transparent;
+    justify-content: center;
+    border-radius: 10%;
+}
+.content-list:nth-child(1) {
+    margin-left: 50%;
+}
+
+/************ULTIME SEZIONI**********/
+
+
+.s3 {
+    display: flex;
+    height: 250px;
+    padding-top: 1%;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 2px;
+}
+.s4 {
+    height: 48px;
+    background-color: #000000;
+    font-size: 4rem;
+    font-weight: 700;
+    list-style-type: none;
+    padding-bottom: 0;
+}
+ul{
+    text-align: center;
+    vertical-align: center;
+}
+.s4 li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 4rem;
+    color: #ffffff;
+}
+h4 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .bn{
+        gap: 40.375%;
+        align-items: center;
+        justify-content: end;
+    }
+    nav {
+        padding-left: 6.25%;
+    }
+    .principale{
+        width: 33%;
+        height: 45.40%;  
+        transform: translate(4%, 118.8%);
+        background: rgba(255, 255, 255, 0.33);
+        border-radius: 12px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        position: relative;  
+    }
+    .testi {
+        position: absolute;
+    }
+    .content-fluid {       
+        padding: 19.875% 10.125%;
+    }
+    /**********FOOTER*********/
+    #foot2 {
+        display: grid;
+        grid-template-rows: 50% 25% 25%;
+        grid-template-columns: 50% 25% 25%;
+        padding-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+ 
+}
+
+@media screen and (max-width: 900px) {
+    /*********HEADER**********/
+    .bn{
+        font-size: 3rem;
+        justify-content: space-between;
+    }
+    .main_banner{
+        height: 18%;
+    }
+    nav .text{
+        visibility: hidden;
+    }
+    nav .icon{
+        visibility: visible;
+        padding-right: 5.33%;
+    }
+    /*********MAIN********/
+    #prima_sezione{
+        background: #ffffff;
+    }
+    #fragoline{
+        background-image: url("../RES/fragoline.jpg");
+        background-size: cover;
+        height: 69.83%;
+    } 
+    .item{
+        width: 100%;
+    }
+    .principale{
+        height: 160px; 
+    }
+    .img{
+        height: 375px;
+    }
+    .testi .p{
+        visibility: hidden;
+    }
+    .content-fluid{
+        height: 436px;
+    }
+    .rev{
+        padding-top: 0;
+    }
+    .content-fluid {       
+        padding: 7.34% 6.4%;
+    }
+    #button1 {
+        width: 56.15%;
+        font-size: 14px;
+
+    }
+    .button2{
+        padding: 33.33% 73.95;
+        width: 45.14%;
+    }
+    .content-list{
+        visibility: hidden;
+    }
+    /*********FOOTER**********/
+    
+    #foot2 .cont{
+        padding-top: 8.94%;
+        padding-left: 6.4%;
+        padding-right: 6.4%;
+    }
+     h3{
+        padding-bottom: 14%;
+    }
+}
+
+
+
+
+
+
+
+
