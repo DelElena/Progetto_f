@@ -1,0 +1,90 @@
+@import '_header';
+@import '_footer';
+@import '_listaMin';
+@import '_listaMax';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 4px;
+}
+
+#inizioLista {
+    background-color: #f5f5f5;
+    color: #6B6B6B;
+    font-size: 14px;
+    width: 100%;
+}
+
+.spazio {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.img {
+    position: relative;
+    /*background-image: url(../../RES/fragola_single.jpg);*/
+    background-size: cover;
+    background-position: center;
+
+}
+
+.new {
+    position: absolute;
+    top: 2%;
+    left: 0.5%;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+.x {
+    position: absolute;
+    bottom: 2%;
+    left: 0.5%;
+    font-size: 10px;
+}
+
+.AggiungiAllaWishList {
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    right: 0.5%;
+    top: 2%;
+}
+
+.descrizione {
+    width: 100%;
+    height: 195px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+.content-fluid {
+    padding: 10% 4%;
+}
+
+h5 {
+    font-weight: 700;
+    padding-bottom: 10%;
+}
+
+.all {
+    padding: 42% 9%;
+}
+
+.bottone {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+    width: 90%;
+    border-color: transparent;
+    padding: 10% 4%;
+    font-size: 10px;
+    font-weight: 400;
+}

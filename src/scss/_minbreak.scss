@@ -1,0 +1,59 @@
+@media screen and (min-width: 1023px) {
+
+    /*************HEADER***************/
+
+    nav .icon {
+        visibility: hidden;
+    }
+
+    /*************MAIN******************7
+
+    /***********PRIMA SEZIONE**********/
+
+    #prima_sezione {
+        height: 700px;
+    }
+
+    #fragoline {
+        width: 33%;
+        height: 45.40%;
+        transform: translate(4%, 118.8%);
+        background: rgba(255, 255, 255, 0.33);
+        border-radius: 12px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /**********SECONDA SEZIONE**********/
+
+    .content-fluid {
+        padding: 19.875% 10.125%;
+    }
+
+    /***************FOOTER****************/
+
+    footer #parte_loghi {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 3.375%;
+        padding-right: 3.375%;
+    }
+
+    #zona_mail {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        padding-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .parent .piu {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+}

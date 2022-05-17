@@ -1,0 +1,102 @@
+@import '_header';
+@import '_minbreakpoint';
+@import '_maxBreakpoint';
+@import '_footer';
+
+html {
+    font-size: 4px;
+    box-sizing: border-box
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0
+}
+
+.content-fluid {
+    padding-left: 4%;
+    font-size: 4rem;
+    font-family: 'Roboto';
+
+    button {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 1%;
+        font-size: 18px
+    }
+
+    h1 {
+        font-size: 6rem;
+        font-weight: 700;
+    }
+
+    ul>li {
+        font-size: 5rem;
+        font-weight: 800;
+    }
+
+    ul:nth-child(2) {
+        font-weight: 700;
+    }
+
+    ul li>:last-of-type {
+        text-decoration: line-through;
+    }
+}
+
+li {
+    display: inline-block;
+    font-size: 4rem;
+    word-spacing: 1%;
+}
+
+ul #costo {
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+ul #ori {
+    text-decoration: line-through;
+}
+
+.prodotti {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 1%;
+    margin-bottom: 1%;
+    border-color: transparent;
+    color: #000;
+    transition: 0.4s;
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    span {
+        .meno {
+            visibility: hidden;
+        }
+    }
+
+}
+
+
+
+.pannelli {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+footer {
+    padding-top: 50%;
+}

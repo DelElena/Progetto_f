@@ -1,0 +1,501 @@
+html {
+    font-size: 4px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@supports(backdrop-filter:blur(8px)) {
+    #primotesto {
+        background-color: #ffffff;
+    }
+}
+
+/***************************HEADER*******************/
+
+header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.linea {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.5%;
+    background-color: #000000;
+    height: 8rem;
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.menu_navigazione {
+    display: flex;
+    height: 13.16%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 4rem;
+    background-color: #ffffff;
+}
+
+.menu_navigazione nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7.466%;
+}
+
+.text a:hover,
+.icon a:hover {
+    color: #bc3063b4;
+    font-size: larger;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#logo {
+    padding: 8rem;
+    font-size: 19px;
+    border: dashed 1px #000000;
+}
+
+/************************MAIN*********************/
+
+
+/*******************PRIMA SEZIONE*****************/
+
+#primo_testo {
+    font-weight: 700;
+    padding: 5% 3.375%;
+}
+
+#tag {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+#primo_testo h2 {
+    font-size: 8rem;
+    padding-top: 2%;
+}
+
+#primo_testo p:last-of-type {
+    font-size: 4rem;
+    font-weight: 400;
+    padding-top: 9.34%;
+    padding-bottom: 5.83%;
+}
+
+#button1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+#button1:hover {
+    font-size: larger;
+    text-decoration: underline;
+}
+
+/*******************SECONDA SEZIONE***************/
+
+.main_sec {
+    background-color: #F5F5F5;
+}
+
+.content-fluid {
+    padding: 8.412197686645636%;
+    align-self: center;
+}
+
+.content-fluid>h2 {
+    font-size: 38px;
+}
+
+.content-fluid p {
+    padding-top: 4%;
+    font-size: 4rem;
+}
+
+.flex-container {
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img {
+    background-image: url("../../RES/fragole_bianco.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.button2 {
+    display: flex;
+    margin-top: 5%;
+    width: 21.15%;
+    height: 48px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    text-decoration: none;
+}
+
+.button2:hover {
+    padding: 2%;
+    font-size: 25px;
+}
+
+
+/*************FOOTER************/
+
+#parte_loghi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    padding: 3%;
+    background-color: #F5F5F5;
+}
+
+.ic {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: -webkit-center;
+}
+
+#email {
+    border-color: transparent;
+    border-bottom-color: #000000;
+    color: #9D9D9D;
+    font-size: 4rem;
+    padding-bottom: 4%;
+}
+
+.send {
+    background-color: #9D9D9D;
+    height: 10.48;
+    color: #ffffff;
+    font-size: 14px;
+    border-color: transparent;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+h3 {
+    font-size: 6rem;
+}
+
+#story {
+    font-size: 10px;
+    color: #9D9D9D;
+    padding-top: 5%;
+}
+
+.parte_descrittiva {
+    padding: 3.90% 11.25% 8.5% 10.5%;
+}
+
+.lista {
+    margin-left: 6.75%;
+}
+
+.lista h4 {
+    padding-left: 5%;
+    height: 6rem;
+}
+
+ul>li {
+    list-style: none;
+    font-size: 4rem;
+    line-height: 8rem;
+}
+
+.parent h4 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-justify: inter-word;
+    vertical-align: center;
+}
+
+
+/************PARTE FINE PAGINA************/
+
+.content-loghi {
+    font-size: 4rem;
+    height: 120px;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.content-loghi a {
+    text-decoration: none;
+}
+
+.cont_foot {
+    height: 48px;
+    background-color: #000000;
+    text-align: center;
+}
+
+.cont_foot ul {
+    padding: 0;
+}
+
+.cont_foot ul>li {
+    display: inline;
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+@media screen and (min-width: 1023px) {
+
+    /*************HEADER***************/
+
+    nav .icon {
+        visibility: hidden;
+    }
+
+    /*************MAIN******************7
+
+    /***********PRIMA SEZIONE**********/
+
+    #prima_sezione {
+        background-image: url("../../RES/fragoline.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 8%;
+        height: 685px;
+    }
+
+    #fragoline {
+        width: 33%;
+        height: 45.40%;
+        transform: translate(4%, 118.8%);
+        background: rgba(255, 255, 255, 0.33);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        position: relative;
+    }
+
+    #primo_testo {
+        position: absolute;
+    }
+
+    /**********SECONDA SEZIONE**********/
+
+    .content-fluid {
+        padding: 19.875% 10.125%;
+    }
+
+    .item {
+        width: 50%;
+        height: 800px;
+        background-color: #ffffff;
+    }
+
+    .rev {
+        flex-direction: row-reverse;
+    }
+
+    /***************FOOTER****************/
+
+    .cont-accordion,
+    .panel,
+    .panel ul,
+    .panel ul>li,
+    .accordion {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content-loghi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.86%;
+        height: 100px;
+        padding-top: 1%;
+        font-size: 4rem;
+        font-weight: 800;
+    }
+
+    #zona_mail {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        padding-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #email {
+        width: 65%;
+    }
+
+    .parent .piu {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    /***************HEADER**************/
+
+    .lista {
+        font-size: 3rem;
+    }
+
+    .text {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .icon {
+        margin-left: 25%;
+    }
+
+    /***************MAIN***************/
+
+    /*****************PRIMA SEZIONE*************/
+
+    #fragoline {
+        background-image: url("../../RES/fragoline.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 450px;
+        padding-top: 10%;
+    }
+
+    #primo_testo {
+        height: 160px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    #primo_testo p:last-of-type {
+        visibility: hidden;
+        height: 0;
+        padding: 0;
+    }
+
+    /*************SECONDA SEZIONE*************/
+
+    .flex-container {
+        padding: 48px 0;
+    }
+
+    /*.content-fluid {
+        height: 436px;
+    }*/
+
+    .item {
+        width: 100%;
+        height: 436px;
+        background-color: #ffffff;
+        padding: 2% 1%;
+    }
+
+    .item p {
+        line-height: 6.6rem;
+    }
+
+    .img {
+        height: 375px;
+    }
+
+    .button2 {
+        padding: 7.33% 73.95;
+        width: 45.14%;
+    }
+
+
+    /*************FOOTER************/
+
+    .contieni {
+        overflow-x: scroll;
+    }
+
+    #parte_loghi {
+        overflow: auto;
+        width: 200%;
+    }
+
+    #parte_loghi ic {
+        display: inline-block;
+    }
+
+
+    #email {
+        width: 100%;
+        padding-top: 63px;
+    }
+
+    .send {
+        margin: 13% 5%;
+    }
+
+    .parte_descrittiva {
+        height: 447px;
+        padding: 8.94% 7.339%;
+    }
+
+    .lista {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .accordion,
+    .panel {
+        visibility: visible;
+    }
+
+    .accordion {
+        display: flex;
+        justify-content: space-between;
+        background-color: #F5F5F5;
+        padding: 3%;
+        margin-bottom: 1%;
+        width: 100%;
+        border-color: transparent;
+        vertical-align: center;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+    }
+
+    .cont_foot {
+        height: 110px;
+    }
+
+}

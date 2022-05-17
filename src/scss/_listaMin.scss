@@ -1,0 +1,93 @@
+.titolo {
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.btn * {
+    pointer-events: none;
+}
+
+.btn {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid black;
+    padding: 10px;
+    border-color: transparent;
+}
+
+.spazio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        padding: 5%;
+
+        .d {
+            visibility: hidden;
+        }
+    }
+}
+
+.all {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.contenitore {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    .car {
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+.contenitore.contenitore-6-col {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 1px;
+
+    .carta {
+        .img {
+            height: 264px;
+        }
+
+        .descrizione {
+            height: 67px;
+
+            .content-fluid {
+                display: none;
+
+                .prezziDesk ul {
+                    display: inline;
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+}
+
+.img {
+    background-image: url("../../RES/fragola_single.jpg");
+    height: 398px;
+}
+
+.content-fluid {
+    padding: 3% 2%;
+
+    h5 {
+        padding-bottom: 1px;
+    }
+
+    .prezziDesk {
+        list-style: none;
+        display: inline;
+    }
+}

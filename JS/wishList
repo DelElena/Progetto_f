@@ -1,0 +1,70 @@
+const bottoniAggiungiAllaWishlist = document.getElementsByClassName(".AggiungiAllaWishList");
+const bottoniRimuoviDallaWishlist = document.querySelectorAll(".rimuovi-dalla-wishlist");
+const wishlist = [];
+
+bottoniAggiungiAllaWishlist.forEach(bottone => {
+    bottone.addEventListener("click", aggiungiAllaWishlist);
+})
+
+bottoniRimuoviDallaWishlist.forEach(bottone => {
+    bottone.addEventListener("click", rimuoviDallaWishlist);
+})
+
+/**
+    * Aggiunge il prodotto cliccato alla wishlist.
+    *
+    * @param {Event} event Evento click
+    */
+function aggiungiAllaWishlist(event) {
+    // dataset contiene tutti gli attribute personalizzati (data-) dell'elemento cliccato.
+    const productId = event.target.dataset.id;
+    wishlist.push(productId);
+    // Inseriamo in localStorage l'array wishlist sotto forma di stringa.
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    updateWishlist(); // Aggiorniamo la vista.
+}
+
+/**
+    * Rimuove il prodotto cliccato dalla wishlist.
+    *
+    * @param {Event} event Evento click
+    */
+function rimuoviDallaWishlist(event) {
+    const productId = event.target.dataset.id;
+    // Cerchiamo nella wishlist l'elemento con l'id cliccato.
+    const indiceElementoDaRimuovere = wishlist.findIndex(product => product === productId);
+    // Rimuoviamo l'ID dalla wishlist.
+    wishlist.splice(indiceElementoDaRimuovere, 1);
+    // Aggiorniamo la localStorage con il nuovo valore.
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    updateWishlist();
+}
+
+/**
+    * Aggiorna la vista in relazione ai valori presenti in wishlist.
+    */
+function updateWishlist() {
+    bottoniRimuoviDallaWishlist.forEach((bottone) => {
+        if (wishlist.includes(bottone.dataset.id)) {
+            bottone.removeAttribute("hidden");
+            bottone.previousElementSibling.setAttribute("hidden", "hidden");
+        } else {
+            bottone.setAttribute("hidden", "hidden");
+            bottone.previousElementSibling.removeAttribute("hidden");
+        }
+    })
+}
+
+/**
+    * Controlla se nella localStorage c'è l'elemento wishlist e ne assegna il
+    * contenuto, se presente, all'array wishlist.
+    */
+function inizializzaWishlist() {
+    const wishListLocalStorage = JSON.parse(localStorage.getItem("wishlist"));
+    if (wishListLocalStorage) {
+        wishlist.push(...wishListLocalStorage);
+    }
+    updateWishlist();
+}
+
+inizializzaWishlist()

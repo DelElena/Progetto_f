@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+#descrizione {
+    background: #F5F5F5;
+}
+
+header .spazio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F5F5F5;
+}
+
+.title p {
+    text-align: center;
+}
+
+.spazio p {
+    color: #9D9D9D;
+}
+
+#img {
+    height: 398px;
+    background-image: url(../../RES/fragola_single.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: space-between;
+    row-gap: 0.5%;
+
+}
+
+#colonna {
+    gap: 1px;
+}
+
+.riga {
+    width: 100%;
+}

@@ -1,0 +1,96 @@
+#parte_loghi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    padding: 3%;
+    background-color: #F5F5F5;
+}
+
+.search {
+    border-color: transparent;
+    border-bottom: solid 2 #000000;
+    width: 317px;
+    color: #9D9D9D;
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 6rem;
+}
+
+#story {
+    font-size: 10px;
+    color: #9D9D9D;
+}
+
+.content-loghi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.86%;
+    height: 100px;
+    padding-top: 1%;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.parte_descrittiva {
+    padding: 3.90% 11.25% 8.5% 10.5%;
+}
+
+.lista {
+    margin-left: 6.75%;
+}
+
+.cont button {
+    background-color: #9D9D9D;
+    height: 10.48;
+    color: #ffffff;
+    font-size: 14px;
+    border-color: transparent;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.lista h4 {
+    padding-left: 5%;
+    height: 6rem;
+}
+
+.parent li {
+    list-style: none;
+    font-size: 4rem;
+    line-height: 8rem;
+}
+
+.parent h4 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-justify: inter-word;
+    vertical-align: center;
+}
+
+
+/************PARTE FINE PAGINA************/
+
+.cont_foot {
+    height: 48px;
+    background-color: #000000;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cont_foot li {
+    display: inline;
+    list-style-type: none;
+    color: #ffffff;
+    vertical-align: center;
+}
+
+.accordion {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
