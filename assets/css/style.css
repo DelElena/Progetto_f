@@ -65,7 +65,7 @@ nav a {
     }
 
     .icon {
-        margin-left: 25%
+        padding-left: 25%
     }
 }
 
@@ -89,8 +89,7 @@ nav a {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         row-gap: .15%;
-        column-gap: .15%;
-        padding-top: 7%
+        column-gap: .15%
     }
 
     .immagini {
@@ -135,6 +134,11 @@ nav a {
         height: 0
     }
 
+    .myCont {
+        padding-top: 20%;
+        padding-bottom: 20%
+    }
+
     .accordion,
     .panel {
         width: 56.43%;
@@ -164,30 +168,36 @@ nav a {
         visibility: hidden
     }
 
-    .carousel-slide {
+    .carousel {
         transition: .4s;
-        padding-top: 10%
+        padding-top: 20%
     }
 
-    .carousel-slide button {
+    .carousel button {
         border-color: rgba(0, 0, 0, 0)
     }
 
-    .carousel-slide button img {
+    .carousel button img {
         width: 100%;
         height: 375px
     }
 
+    .prodotti {
+        padding-top: 20%
+    }
+
     .accordion {
-        width: 100%
+        width: 100%;
+        padding: 5%
     }
 
     .content-fluid {
         padding: 4% 6%;
-        background-color: #f5f5f5
+        background-color: #f5f5f5;
+        position: relative
     }
 
-    .content-fluid marginn-botto button {
+    .content-fluid button {
         width: 87.234%;
         margin-bottom: 4%
     }
@@ -195,6 +205,236 @@ nav a {
     .content-fluid .aggiungiAllaWishlist {
         visibility: hidden;
         width: 0
+    }
+
+    .content-fluid .prezziDesk {
+        position: absolute;
+        bottom: 2%
+    }
+
+    .content-fluid .prezziDesk li {
+        display: inline-block;
+        list-style: none;
+        word-spacing: 4px
+    }
+
+    .content-fluid .prezziDesk li:last-of-type {
+        text-decoration: line-through
+    }
+}
+
+#parte_loghi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    padding: 3%;
+    background-color: #f5f5f5
+}
+
+.ic {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: -webkit-center
+}
+
+#email {
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #000;
+    color: #9d9d9d;
+    font-size: 4rem;
+    padding-bottom: 4%
+}
+
+.send {
+    background-color: #9d9d9d;
+    height: 10.48;
+    color: #fff;
+    font-size: 14px;
+    border-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    border-radius: 10%
+}
+
+h3 {
+    font-size: 6rem
+}
+
+#story {
+    font-size: 10px;
+    color: #9d9d9d;
+    padding-top: 5%
+}
+
+.parte_descrittiva {
+    padding: 3.9% 11.25% 8.5% 10.5%
+}
+
+.lista {
+    margin-left: 6.75%
+}
+
+.lista h4 {
+    padding-left: 5%;
+    height: 6rem
+}
+
+ul>li {
+    list-style: none;
+    font-size: 4rem;
+    line-height: 8rem
+}
+
+.parent h4 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-justify: inter-word;
+    vertical-align: center
+}
+
+.contieni {
+    padding-top: 15%
+}
+
+.content-loghi {
+    font-size: 4rem;
+    height: 120px;
+    text-align: center;
+    padding-top: 7%
+}
+
+.content-loghi a {
+    text-decoration: none
+}
+
+.cont_foot {
+    height: 48px;
+    background-color: #000;
+    text-align: center
+}
+
+.cont_foot ul {
+    padding: 0
+}
+
+.cont_foot ul>li {
+    display: inline;
+    list-style-type: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600
+}
+
+@media screen and (min-width: 1024px) {
+    #parte_loghi {
+        padding-top: 200px;
+        padding-bottom: 100px
+    }
+
+    .cont-accfin,
+    .panfin,
+    .panfin ul,
+    .panfin ul li,
+    .accfin {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0
+    }
+
+    .content-loghi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.86%;
+        height: 100px;
+        padding-top: 1%;
+        font-size: 4rem;
+        font-weight: 800
+    }
+
+    #zona_mail {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        padding-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%
+    }
+
+    #email {
+        width: 65%
+    }
+
+    .parent .piu {
+        visibility: hidden;
+        width: 0;
+        height: 0
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .contieni {
+        overflow-x: scroll;
+        background-color: #f5f5f5;
+        padding-top: 30%
+    }
+
+    #parte_loghi {
+        overflow: auto;
+        width: 200%
+    }
+
+    #parte_loghi ic {
+        display: inline-block
+    }
+
+    #email {
+        width: 100%;
+        padding-top: 63px
+    }
+
+    .send {
+        margin: 13% 5%
+    }
+
+    .parte_descrittiva {
+        height: 447px;
+        padding: 8.94% 7.339%
+    }
+
+    .lista {
+        visibility: hidden;
+        width: 0;
+        height: 0
+    }
+
+    .accordion,
+    .panel {
+        visibility: visible
+    }
+
+    .accordion {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f5f5f5;
+        padding: 3%;
+        margin-bottom: 1%;
+        width: 100%;
+        border-color: rgba(0, 0, 0, 0);
+        vertical-align: center;
+        font-size: 15px;
+        transition: .4s
+    }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden
+    }
+
+    .cont_foot {
+        height: 110px
     }
 }
 
@@ -206,6 +446,17 @@ html {
 * {
     font-family: "Roboto", sans-serif;
     margin: 0
+}
+
+.inizio {
+    padding-top: 10%;
+    word-spacing: 20px
+}
+
+.inizio a {
+    font-size: 4rem;
+    color: #000;
+    text-decoration: none
 }
 
 .content-fluid {
@@ -240,7 +491,6 @@ html {
 }
 
 li {
-    display: inline-block;
     font-size: 4rem;
     word-spacing: 1%
 }
@@ -254,7 +504,16 @@ ul #ori {
     text-decoration: line-through
 }
 
-.accordion {
+.descrizione {
+    position: relative
+}
+
+.prezziDesk {
+    position: absolute;
+    bottom: 4%
+}
+
+.prodotti {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -266,16 +525,16 @@ ul #ori {
     transition: .4s
 }
 
-.accordion h2 {
+.prodotti h2 {
     font-size: 4rem;
     font-weight: 700
 }
 
-.accordion span .meno {
+.prodotti span .meno {
     visibility: hidden
 }
 
-.panel {
+.pannelli {
     padding: 0 18px;
     display: none;
     overflow: hidden;
@@ -285,8 +544,4 @@ ul #ori {
 h2 {
     font-size: 4rem;
     font-weight: 700
-}
-
-footer {
-    padding-top: 50%
 }

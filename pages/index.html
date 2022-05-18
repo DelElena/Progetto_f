@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <!--link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css"-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                     </a>
                 </div>
                 <div class="text">
-                    <a href="#prima_sezione">
+                    <a href="./page1.html">
                         <p>Home</p>
                     </a>
                 </div>
@@ -63,33 +63,41 @@
         </div>
     </header>
     <main>
-        <a href="./page1.html">Home /</a>
-        <a href="./indexLista.html">Product list /</a>
-        <a href="#principale">Product</a>
+
         <section>
 
+            <div class="inizio">
+                <a href="./indexLista.html">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.41436 10.0001L10.7073 16.293L9.29304 17.7072L0.585938 9.00008L9.29304 0.292969L10.7073 1.70718L4.41436 8.00008H19.0002V10.0001H4.41436Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <a href="./page1.html">Home /</a>
+                <a href="./indexLista.html">Product list /</a>
+                <a href="#principale">Product</a>
+            </div>
             <!--parte per mobile-->
-            <div class="carousel slide" data-bs-ride="carousel">
-                <button>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../RES/fragola_single.jpg" class="d-block w-100" alt="fragola">
+                        <button onclick="mandaAvanti();"></button>
+                        <img class="d-block w-100" src="../RES/fragola_single.jpg" alt="First slide">
                     </div>
-                </button>
-                <button>
                     <div class="carousel-item">
-                        <img src="../RES/sezione_fragola.jpg" class="d-block w-100" alt="fragola tagliata">
+                        <button onclick="mandaAvanti();"></button>
+                        <img class="d-block w-100" src="../RES/sezione_fragola.jpg" alt="Second slide">
                     </div>
-                </button>
-                <button>
                     <div class="carousel-item">
-                        <img src="../RES/fragole_gruppo.jpg" class="d-block w-100" alt="fragole">
+                        <button onclick="mandaAvanti();"></button>
+                        <img class="d-block w-100" src="../RES/fragole_gruppo.jpg" alt="Third slide">
                     </div>
-                </button>
-                <button>
                     <div class="carousel-item">
-                        <img src="../RES/fragole_coda.jpg" class="d-block w-100" alt="fragole in coda">
+                        <button onclick="mandaAvanti();"></button>
+                        <img class="d-block w-100" src="../RES/fragole_coda.jpg" alt="Fourth slide">
                     </div>
-                </button>
+                </div>
             </div>
 
             <!--parte griglia per desktop-->
@@ -131,24 +139,10 @@
                     </div>
                 </div>
             </div>
-            <!--parte griglia per desktop-->
-
-
-
-            <!--button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button-->
 
         </section>
         <section>
-            <div>
+            <div class="myCont">
                 <button class="accordion prodotti" aria-label="Description">
                     <h2>Description</h2>
                     <span>
@@ -426,7 +420,7 @@
                         <li>Contact us</li>
                     </ul>
                 </div>
-                <button class="accordion cont-accfin">
+                <button class="accordion accfin">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
@@ -481,7 +475,7 @@
         </div>
     </footer>
 
-    <script src="../JS/carosel.js">
+    <script src="../JS/Carousel.js">
 
     </script>
     <script src="../JS/accordion_footer.js"></script>

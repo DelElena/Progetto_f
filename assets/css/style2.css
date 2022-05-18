@@ -321,7 +321,7 @@ ul>li {
     .cont-accordion,
     .panel,
     .panel ul,
-    .panel ul>li,
+    .panel ul li,
     .accordion {
         visibility: hidden;
         width: 0;

@@ -13,6 +13,17 @@ html {
     margin: 0
 }
 
+.inizio {
+    padding-top: 10%;
+    word-spacing: 20px;
+}
+
+.inizio a {
+    font-size: 4rem;
+    color: #000;
+    text-decoration: none;
+}
+
 .content-fluid {
     padding-left: 4%;
     font-size: 4rem;
@@ -45,7 +56,6 @@ html {
 }
 
 li {
-    display: inline-block;
     font-size: 4rem;
     word-spacing: 1%;
 }
@@ -57,6 +67,15 @@ ul #costo {
 
 ul #ori {
     text-decoration: line-through;
+}
+
+.descrizione {
+    position: relative;
+}
+
+.prezziDesk {
+    position: absolute;
+    bottom: 4%;
 }
 
 .prodotti {
@@ -83,8 +102,6 @@ ul #ori {
 
 }
 
-
-
 .pannelli {
     padding: 0 18px;
     display: none;
@@ -95,8 +112,4 @@ ul #ori {
 h2 {
     font-size: 4rem;
     font-weight: 700;
-}
-
-footer {
-    padding-top: 50%;
 }
