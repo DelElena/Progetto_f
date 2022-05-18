@@ -37,7 +37,7 @@
 
     #b {
         background-image: url(../../RES/sezione_fragola.jpg);
-        background-position-y: 60%;
+        background-position-y: 70%;
     }
 
     #c {
@@ -56,6 +56,15 @@
         .aggiungiAllaWishlist {
             width: 64px;
         }
+
+        ul li {
+            display: inline;
+        }
+
+        .addCart {
+            width: 50%;
+        }
+
     }
 
     #price>button {
